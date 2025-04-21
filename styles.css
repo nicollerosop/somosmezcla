@@ -1,0 +1,290 @@
+/* generales */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Raleway", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+:root{
+    --main-color:rgb(0, 31, 84);
+    --main-color-2: rgb(10, 17, 40);
+    --main-color-3: rgb(3, 64, 120);
+    --main-color-4: rgb(18, 130, 162);
+    --main-color-5: rgb(249, 244, 228);
+}
+
+/* flex */
+.flex{
+    display: flex;
+}
+
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.flex-left{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+.flex-right{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:end;
+}
+
+.flex8{
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    justify-content: space-evenly;
+}
+
+.flex9{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex9 div{
+    width: 20%;
+}
+
+
+/* nav, header */
+.nav-absolute{
+    position: absolute;
+}
+#nav{
+    position: fixed;
+    left: 20%;
+    top: 0px;
+    background-color: rgba(10, 17, 40, 85%);
+    display: flex;
+    height: 70px;
+    width: 60%;
+    justify-content:space-evenly;
+    align-items: center;
+    border-radius: 0px 0px 20px 20px;
+}
+#nav a{
+    color: var(--main-color-5);
+    font-family: "Bebas Neue", serif;
+    font-weight: light;
+    font-size: 25px;
+}
+#home header{
+    background-image: url(./img/vid-azulejos.gif);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* sections */
+.intro-home, .intro-proyectos{
+    background-color: var(--main-color-5);
+    color: var(--main-color-2);
+    text-align: center;
+    height: 100vh;
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+}
+.intro-proyectos{
+    background-image: url(./img/vid-azulejos.gif); /* CAMBIAR FONDO */
+    background-position: center;
+    background-size: cover;
+}
+#sobre-mezcla, .editorial{
+    background-position: center;
+    background-size: cover;
+    font-weight: light;
+    font-size: 20px;
+    padding: 6%;
+    height: 100vh;
+    display: flex;
+}
+#sobre-mezcla{
+    background-image:url(./img/back-flores-31.jpg);    
+}
+.ultimos-proyectos{
+    display: flex;
+    background-color: var(--main-color);
+    color: var(--main-color-5);
+    height: 80vh;
+}
+.branding, .editorial, .packaging{
+    height: 80vh;
+}
+.branding{
+    background-color: var(--main-color-2);
+    display: flex;
+}
+.editorial{
+    background-image:url(./img/branding_background.jpg);    
+}
+
+/* article */
+#sobre-mezcla article{
+    background-color: rgba(19, 20, 39, 80%);
+    color: var(--main-color-5);
+    border-radius: 10px;
+    padding: 70px;
+    max-width: 40%;
+    height: 90%;
+}
+.ultimos-proyectos article{
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+    padding-top: 20px;
+}
+.editorial article, .branding article, .packaging article{
+    border-radius: 10px;
+    padding: 70px;
+    max-width: 50%;
+    height: 90%;
+}
+.branding article{
+    background-color: rgba(255, 238, 0, 0.582);
+    color: var(--main-color-5);
+}
+.editorial article{
+    background-color: rgb(249, 244, 228, 70%);
+    color: var(--main-color-2);
+}
+.packaging article{
+    background-color: rgba(19, 20, 39, 80%);
+    color: var(--main-color-5);
+}
+
+
+/* H, p, a, span */
+h1, h2, h3{
+    font-family: "Bebas Neue", serif;
+    font-weight: lighter;
+}
+h1{
+    font-size: 75px;
+}
+h2{
+    font-size: 55px;
+}
+h3{
+    font-size: 30px;
+}
+.intro-home p{
+    max-width: 600px;
+    font-size: larger;
+}
+.intro-home span{
+    font-style: italic;
+}
+.ultimos-proyectos p, .ultimos-proyectos h3{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+/* button */
+.button00{
+    background-color: var(--main-color-5);
+    font-family: "Bebas Neue", serif;
+    font-size: 30px;
+    color: var(--main-color-2);
+    border: none;
+    border-radius: 3px;
+    padding: 6px 16px;
+}
+.button01{
+    background-color: var(--main-color-5);
+    font-family: "Bebas Neue", serif;
+    font-size: 20px;
+    color: var(--main-color-2);
+    border: none;
+    border-radius: 3px;
+    padding: 3px 10px;
+}
+.button02{
+    background-color: var(--main-color);
+    font-family: "Bebas Neue", serif;
+    font-size: 20px;
+    color: var(--main-color-5);
+    border: none;
+    border-radius: 3px;
+    padding: 3px 10px;
+}
+.button00:hover, .button01:hover, .button02:hover{
+    background-color: var(--main-color-4);
+    color: var(--main-color-5);
+}
+
+
+/* img, video */
+#nav a img{
+    width: 4vw;
+}
+.logo-principal{
+    width: 45vw;
+}
+.ultimos-proyectos img{
+    max-width: 250px;
+    border-radius: 10px;
+}
+.intro-proyectos img{
+    max-width: 50px;
+}
+.branding img{
+    max-width: 40vw;
+    border-radius: 10px;
+}
+
+
+/* footer */
+footer{
+    background-color: var(--main-color-5);
+    height: 55vh;
+}
+footer img{
+    width: 15vw;
+}
+footer div a, footer form{
+    color: var(--main-color);
+}
+footer div a{
+    font-family: "Bebas Neue", serif;
+    font-size: 25px;
+}
+footer label, footer input{
+    margin: 10px;
+}
+footer input{
+    border: none;
+}
+.mail{
+    border-bottom: 2px #001F54 solid;
+    background-color: var(--main-color-5);
+    width: 20vw;
+}
+footer .flex{
+    width: 80%;
+    justify-content:space-between;
+    align-items: center;
+}
+
