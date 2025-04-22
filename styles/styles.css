@@ -99,7 +99,7 @@ ul{
 }
 
 /* sections */
-.intro-home, .intro-proyectos{
+.intro-home, .intro-proyectos, .intro-editorial{
     background-color: var(--main-color-5);
     color: var(--main-color-2);
     text-align: center;
@@ -113,7 +113,7 @@ ul{
     background-position: center;
     background-size: cover;
 }
-#sobre-mezcla, .editorial{
+#sobre-mezcla, .editorial, .mayo-amarillo{
     background-position: center;
     background-size: cover;
     font-weight: light;
@@ -130,7 +130,7 @@ ul{
     color: var(--main-color-5);
     height: 80vh;
 }
-.branding, .editorial, .packaging{
+.subclase{
     height: 85vh;
 }
 .branding{
@@ -142,7 +142,16 @@ ul{
 .editorial{
     background-image:url(../img/branding_background.jpg);    
 }
+.mayo-amarillo{
+    background-image: url(../img/mayo-amarillo.jpg);
+}
 .packaging{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.rebxlib{
+    background-color: var(--main-color);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -163,12 +172,12 @@ ul{
     max-width: 250px;
     padding-top: 20px;
 }
-.editorial article, .branding article, .packaging article{
+.editorial article, .branding article, .packaging article, .mayo-amarillo article, .rebxlib article{
     border-radius: 10px;
     padding: 70px;
     width: 30%;
 }
-.branding article{
+.branding article, .rebxlib article{
     color: var(--main-color-5);
 }
 .editorial article{
@@ -182,33 +191,39 @@ ul{
 .packaging div{
     width: 90vw;
 }
+.intro-proyectos div{
+    margin-top: 30%;
+    color: var(--main-color-5);
+}
+.intro-editorial div{
+    margin-top: 30%;
+}
 
 /* H, p, a, span */
-#home, #contact, #proyectos{
+#home, #contact, #proyectos, #editorial{
     font-family: "Raleway", sans-serif;
 }
-#home a, #contact a, #proyectos a{
+#home a, #contact a, #proyectos a, #editorial a{
     text-decoration: none;
 }
-
 h1, h2, h3{
     font-family: "Bebas Neue", serif;
     font-weight: lighter;
 }
-
-#home h1, #proyectos h1{
+#home h1, #proyectos h1, #editorial h1{
     font-size: 4.5rem;
 }
-#home h2, #proyectos h2{
+#home h2, #proyectos h2, #editorial h2{
     font-size: 3.5rem;
 }
-#home h3, #proyectos h3{
+#home h3, #proyectos h3, #editorial h3{
     font-size: 2rem;
 }
-
+.p-intro{
+    font-size: 1.5rem;
+}
 .intro-home p{
-    max-width: 600px;
-    font-size: larger;
+    max-width: 60vw;
 }
 .intro-home span{
     font-style: italic;
@@ -262,10 +277,10 @@ h1, h2, h3{
     max-width: 250px;
     border-radius: 10px;
 }
-.intro-proyectos img{
+.intro-flecha{
     max-width: 50px;
 }
-.branding img{
+.branding img, .rebxlib img{
     border-radius: 10px;
     max-width: 60%;
 }
