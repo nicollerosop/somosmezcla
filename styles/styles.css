@@ -156,6 +156,12 @@ ul{
     align-items: center;
     justify-content: space-evenly;
 }
+.edit-proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 /* article, div */
 #sobre-mezcla article{
@@ -197,6 +203,9 @@ ul{
 }
 .intro-editorial div{
     margin-top: 30%;
+}
+#carouselExampleCaptions{
+    width: 60vw;
 }
 
 /* H, p, a, span */
