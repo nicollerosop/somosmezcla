@@ -7,30 +7,31 @@
     <meta name="description" content="sitio web y portfolio de diseñadora gráfica">
     <meta name="keywords" content="diseño diseñografico grafico portfolio">
     <meta name="author" content="Nicolle Rodriguez">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
 
 <body>
     <header id="edit">
-        <nav id="nav">
-            <article>
-                <a href="../index.html">SOBRE MI</a>
-                <a href="./proyectos.html">PROYECTOS</a>
-                <a href="../index.html"> <img src="../img/logo_principal_05.svg"  alt=""> </a>
-                <a href="">BLOG</a>
+        <div class="nav-absolute">
+            <nav id="nav">
+                <a href="../index.html">SOBRE MEZCLA</a>
+                <a href="https://open.spotify.com/intl-es/album/4FviRd7FubuuGNVt2qME1G?si=CiFgFloNQ7qGhPf2UyQOBg">BLOG</a>
+                <a href="" class="flex"> <img src="../img/logo_principal_05.svg" alt=""></a>
+                <a href="#proy">PROYECTOS</a>
                 <a href="./contacto.html" target="_blank">CONTACTO</a>
-            </article>        
-        </nav>
+            </nav>
+        </div>
 
         <section>
-            <h1>Proyectos</h1>
+            <h1>EDITORIAL</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aliquam eum non, molestias rerum numquam facilis iure voluptates odit iusto!</p>
         </section>  
     </header>
@@ -77,27 +78,24 @@
         </div>
     </main>
 
-    <footer>
-        <div>
+    <footer class="flex-center">
+        <div class="flex">
             <a href="">INSTAGRAM</a>
             <a href="">WHATSAPP</a>
+            <a href="../index.html"><img src="../img/logo_principal_02.svg" alt="logo-empresa"></a>
             <a href="./html/contacto.html" target="_blank">CONTACTO</a>
             <a href="./html/proyectos.html">PROYECTOS</a>
         </div>
 
         <div>
-            <div> 
-                <form action="">
-                    <label for="mail">Suscribete a nuestro blog</label>
-                    <input id="mail" type="email" placeholder="somosmezcla@gmail.com" class="mail">
-        
-                    <input type="submit" value="Enviar" class="button02">
-                </form>
-            </div>
+            <form action="" class="flex-center">
+                <label for="mail">Suscribete a nuestro blog</label>
+                <input id="mail" type="email" placeholder="" class="mail">
+                <input type="submit" value="Enviar" class="button02">
+            </form>
         </div>
-
-        <a href="#home"><img src="../img/logo_principal_02.svg" alt="logo-empresa"></a>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>

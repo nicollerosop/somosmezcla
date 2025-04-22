@@ -7,12 +7,6 @@
 html{
     scroll-behavior: smooth;
 }
-body{
-    font-family: "Raleway", sans-serif;
-}
-a{
-    text-decoration: none;
-}
 ul{
     list-style: none;
 }
@@ -64,6 +58,13 @@ ul{
 .flex9 div{
     width: 20%;
 }
+.flex10{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:center;
+    width: 100vw;
+}
 
 
 /* nav, header */
@@ -89,7 +90,7 @@ ul{
     font-size: 25px;
 }
 #home header{
-    background-image: url(./img/vid-azulejos.gif);
+    background-image: url(../img/vid-azulejos.gif);
     height: 100vh;
     background-size: cover;
     display: flex;
@@ -108,7 +109,7 @@ ul{
     justify-content: center;
 }
 .intro-proyectos{
-    background-image: url(./img/vid-azulejos.gif); /* CAMBIAR FONDO */
+    background-image: url(../img/vid-azulejos.gif); /* CAMBIAR FONDO */
     background-position: center;
     background-size: cover;
 }
@@ -116,13 +117,12 @@ ul{
     background-position: center;
     background-size: cover;
     font-weight: light;
-    font-size: 20px;
     padding: 6%;
     height: 100vh;
     display: flex;
 }
 #sobre-mezcla{
-    background-image:url(./img/back-flores-31.jpg);    
+    background-image:url(../img/back-flores-31.jpg);    
 }
 .ultimos-proyectos{
     display: flex;
@@ -131,17 +131,24 @@ ul{
     height: 80vh;
 }
 .branding, .editorial, .packaging{
-    height: 80vh;
+    height: 85vh;
 }
 .branding{
     background-color: var(--main-color-2);
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .editorial{
-    background-image:url(./img/branding_background.jpg);    
+    background-image:url(../img/branding_background.jpg);    
+}
+.packaging{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-/* article */
+/* article, div */
 #sobre-mezcla article{
     background-color: rgba(19, 20, 39, 80%);
     color: var(--main-color-5);
@@ -159,11 +166,9 @@ ul{
 .editorial article, .branding article, .packaging article{
     border-radius: 10px;
     padding: 70px;
-    max-width: 50%;
-    height: 90%;
+    width: 30%;
 }
 .branding article{
-    background-color: rgba(255, 238, 0, 0.582);
     color: var(--main-color-5);
 }
 .editorial article{
@@ -174,22 +179,33 @@ ul{
     background-color: rgba(19, 20, 39, 80%);
     color: var(--main-color-5);
 }
-
+.packaging div{
+    width: 90vw;
+}
 
 /* H, p, a, span */
+#home, #contact, #proyectos{
+    font-family: "Raleway", sans-serif;
+}
+#home a, #contact a, #proyectos a{
+    text-decoration: none;
+}
+
 h1, h2, h3{
     font-family: "Bebas Neue", serif;
     font-weight: lighter;
 }
-h1{
-    font-size: 75px;
+
+#home h1, #proyectos h1{
+    font-size: 4.5rem;
 }
-h2{
-    font-size: 55px;
+#home h2, #proyectos h2{
+    font-size: 3.5rem;
 }
-h3{
-    font-size: 30px;
+#home h3, #proyectos h3{
+    font-size: 2rem;
 }
+
 .intro-home p{
     max-width: 600px;
     font-size: larger;
@@ -199,7 +215,6 @@ h3{
 }
 .ultimos-proyectos p, .ultimos-proyectos h3{
     text-align: center;
-    padding-bottom: 15px;
 }
 
 /* button */
@@ -251,9 +266,15 @@ h3{
     max-width: 50px;
 }
 .branding img{
-    max-width: 40vw;
     border-radius: 10px;
+    max-width: 60%;
 }
+.packaging{
+    background-image: url(../img/vid-azulejos.gif); /* CAMBIAR FONDO */
+    background-position: center;
+    background-size: cover;
+}
+
 
 
 /* footer */
